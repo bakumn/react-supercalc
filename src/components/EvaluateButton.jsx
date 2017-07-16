@@ -3,9 +3,12 @@ var createReactClass = require('create-react-class');
 
 var EvaluateButton=createReactClass({
 	render:function(){
+		var Styles={
+		    margin: "5px auto",
+		};
 		return(
 			<div className="col-xs-3">
-				<button className="btn btn-success btn-raised" onClick={this.props.onClick}>=</button>
+				<button className="btn btn-success btn-raised"  style={Styles} onClick={this.props.onClick}>=</button>
 			</div>
 		);
 	}

@@ -21437,12 +21437,15 @@ var ClearButton = createReactClass({
 	displayName: 'ClearButton',
 
 	render: function () {
+		var Styles = {
+			margin: "5px auto"
+		};
 		return React.createElement(
 			'div',
 			{ className: 'col-xs-3' },
 			React.createElement(
 				'button',
-				{ className: 'btn btn-danger btn-raised', onClick: this.props.onClick },
+				{ className: 'btn btn-danger btn-raised', style: Styles, onClick: this.props.onClick },
 				'C'
 			)
 		);
@@ -21458,12 +21461,15 @@ var EvaluateButton = createReactClass({
 	displayName: 'EvaluateButton',
 
 	render: function () {
+		var Styles = {
+			margin: "5px auto"
+		};
 		return React.createElement(
 			'div',
 			{ className: 'col-xs-3' },
 			React.createElement(
 				'button',
-				{ className: 'btn btn-success btn-raised', onClick: this.props.onClick },
+				{ className: 'btn btn-success btn-raised', style: Styles, onClick: this.props.onClick },
 				'='
 			)
 		);
@@ -21490,12 +21496,15 @@ var GeneralButton = createReactClass({
 	},
 	render: function () {
 		var classes = this.props.number ? "btn-primary" : "btn-info";
+		var Styles = {
+			margin: "5px auto"
+		};
 		return React.createElement(
 			'div',
 			{ className: 'col-xs-3' },
 			React.createElement(
 				'a',
-				{ className: "btn btn-raised " + classes, onClick: this.props.onClick },
+				{ className: "btn btn-raised " + classes, style: Styles, onClick: this.props.onClick },
 				this.props.value
 			)
 		);
@@ -21509,7 +21518,7 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var App = require('./components/App.jsx');
 var Styles = {
-    maxWidth: "236px",
+    maxWidth: "300px",
     margin: "40px auto"
 };
 ReactDOM.render(React.createElement(
